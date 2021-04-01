@@ -4,7 +4,7 @@ const sendError = require("../util/error");
 module.exports = {
   info: {
     name: "stop",
-    description: "To stop the music.",
+    description: "To stop the music and clearing the queue",
     usage: "",
     aliases: [],
   },
@@ -21,7 +21,7 @@ if(!serverQueue.connection.dispatcher)return
       } catch (error) {
         message.guild.me.voice.channel.leave();
         message.client.queue.delete(message.guild.id);
-        return sendError(`:notes: The player has stopped.: ${error}`, message.channel);
+        return sendError(`:notes: The player has stopped and the queue has been cleared.: ${error}`, message.channel);
       }
     message.client.queue.delete(message.guild.id);
     serverQueue.songs = [];
