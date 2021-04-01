@@ -1,7 +1,1 @@
-# Packages
-node_modules/
-package-lock.json
-yarn.lock
-
-# Envronmental Storage
-.env
+*.bak

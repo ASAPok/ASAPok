@@ -4,7 +4,7 @@ const sendError = require("../util/error");
 module.exports = {
     info: {
         name: "leave",
-        aliases: ["goaway", "disconnect"],
+        aliases: ["goaway", "disconnect", "bye"],
         description: "Leave The Voice Channel!",
         usage: "Leave",
     },
@@ -22,8 +22,8 @@ module.exports = {
         }
 
         const Embed = new MessageEmbed()
-            .setAuthor("Leave Voice Channel", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
-            .setColor("GREEN")
+            .setAuthor("Leave Voice Channel", "https://github.com/navaneethkm004/my-images/blob/main/giphy.gif?raw=true")
+            .setColor("#fffdd0")
             .setTitle("Success")
             .setDescription("🎶 Left The Voice Channel.")
             .setTimestamp();
